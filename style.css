@@ -1,9 +1,15 @@
 .tekst
 {
-    color: rgb(117, 209, 32);
+    color: rgb(97, 25, 192);
+}
+
+.celapozadina
+{
+    font-size: large;
+    background-color: rgb(0, 0, 0);
 }
 
 .pozadina
 {
-    background-color: cadetblue;
+    background-color: rgb(9, 1, 15);
 }
