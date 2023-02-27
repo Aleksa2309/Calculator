@@ -9,12 +9,21 @@
 </head>
 
 <body class="celapozadina">
-    <div class="pozadina">
+    <div class="">
         <h1 class="tekst">Document</h1>
         <p class="tekst"> Prvi paragraf 2 </p>
     </div>
-    <div>
-        <input type="text" class="tekst pozadina" placeholder="Unesi potrosnju u l"></input>
+    <div id="osnovno">
+        <input oninput="novaCena()" type="number" class="tekst pozadina" placeholder="Potrosnja u l" id="potrosnja"></input>
+        <input oninput="novaCena()" type="number" class="tekst pozadina" placeholder="Cena litra" id="cena"></input>
+        <button onclick="rezultat()" class="pozadina"> Cena kilometra </button>
+        <br>
+        <h3 class="tekst" id="cenaKm"></h3>
     </div>
+    <div id="napredno">
+        <input type="number" class="tekst pozadina" placeholder="Velicina rezervoara" id="rezervoar" min="10"> </input>
+        <input type="number" class="tekst pozadina" placeholder="Unesite distancu u km" id="distanca" min="0.1"> </input>
+    </div>
+    <button onclick="resetovanje()" class="tekst pozadina"> Resetuj </button>
 </body>
 </html>
