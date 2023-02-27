@@ -3,13 +3,34 @@
     color: rgb(97, 25, 192);
 }
 
+.pozadina
+{
+    background-color: rgb(9, 1, 15);
+}
+
 .celapozadina
 {
     font-size: large;
     background-color: rgb(0, 0, 0);
 }
 
-.pozadina
+.objekat
 {
-    color: rgb(9, 1, 15);
+    color: rgb(97, 25, 192);
+    background-color: rgb(9, 1, 15);
+    margin-right: 20px;
+    padding: 2px;   
+}
+
+.objekat2
+{
+    color: rgb(97, 25, 192);
+    font-weight:bolder;
+    background-color: rgb(0, 183, 255);;
+    margin-right: 20px;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-width: 2px;
+    border-color: rgb(117, 227, 255);
 }

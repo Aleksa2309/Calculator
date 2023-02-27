@@ -9,21 +9,33 @@
 </head>
 
 <body class="celapozadina">
+    <script src="script.js"></script>
     <div class="">
-        <h1 class="tekst">Document</h1>
-        <p class="tekst"> Prvi paragraf 2 </p>
+        <h1 class="tekst">Kalkulator Goriva</h1>
     </div>
+
     <div id="osnovno">
-        <input oninput="novaCena()" type="number" class="tekst pozadina" placeholder="Potrosnja u l" id="potrosnja"></input>
-        <input oninput="novaCena()" type="number" class="tekst pozadina" placeholder="Cena litra" id="cena"></input>
-        <button onclick="rezultat()" class="pozadina"> Cena kilometra </button>
+        <h4 class="tekst"> Unesite potrosnju u l/100km i cenu litra goriva. </h4>
+        <input oninput="novaCena()" type="number" class="objekat" placeholder="Potrosnja u l" id="potrosnja" min="1"></input>
+        <input oninput="novaCena()" type="number" class="objekat" placeholder="Cena litra" id="cena" min="1"></input>
+        <button onclick="rezultat()" class="objekat2"> Cena kilometra </button>
         <br>
-        <h3 class="tekst" id="cenaKm"></h3>
+        <h4 class="tekst" id="cenaKilometra"></h4>
     </div>
+
     <div id="napredno">
-        <input type="number" class="tekst pozadina" placeholder="Velicina rezervoara" id="rezervoar" min="10"> </input>
-        <input type="number" class="tekst pozadina" placeholder="Unesite distancu u km" id="distanca" min="0.1"> </input>
+        <input oninput="noviRez()" type="number" class="objekat" placeholder="Velicina rezervoara" id="rezervoar" min="1"> </input>
+        <input oninput="noviRez()" type="number" class="objekat" placeholder="Unesite distancu u km" id="distanca" min="0.1"> </input>
+        <button onclick="rezervoar()" class="objekat2" > Izracunaj </button>
+        <br>
+        <h4 class="tekst" id="predjenoKm"></h4>
+        <h4 class="tekst" id="zeljenaDist"></h4>
     </div>
-    <button onclick="resetovanje()" class="tekst pozadina"> Resetuj </button>
+
+    <div>
+        <br>
+        <button onclick="resetovanje()" class="objekat2"> Resetuj </button>
+    </div>
+    
 </body>
 </html>
