@@ -28,5 +28,7 @@ function rezervoar(){
 }
 
 function resetovanje(){
-
+    document.querySelectorAll('input').forEach(element => {
+        element.value = '';
+    }); 
 }
